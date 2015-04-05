@@ -20,4 +20,4 @@ You can always use the setup.py file
 
 License
 -------
-This project is released under terms of `ISC license <http://opensource.org/licenses/ISC`_.
+This project is released under terms of `ISC license <http://opensource.org/licenses/ISC>`_.
