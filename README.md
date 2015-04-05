@@ -1,2 +1,2 @@
 # flask-skel
-An skeleton for web apps using Flask
+Skeleton for web apps using Flask
