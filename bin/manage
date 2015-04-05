@@ -1,0 +1,5 @@
+#!/bin/bash
+
+HERE=`dirname $0`
+APPDIR="$HERE/../src"
+exec python $APPDIR/manage.py "$@"
