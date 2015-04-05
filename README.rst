@@ -3,6 +3,12 @@ Flask Skel
 
 Skeleton for web apps using Flask.
 
+Learned a lot from:
+
+* `Flask Foundation <https://github.com/JackStouffer/Flask-Foundation>`_
+* `Fbone <https://github.com/imwilsonxu/fbone>`_
+* Flask Web Development book (by `Miguel Grinberg <http://blog.miguelgrinberg.com/>`_)
+
 Tests
 -----
 
