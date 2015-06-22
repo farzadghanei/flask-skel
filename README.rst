@@ -12,14 +12,6 @@ Learned a lot from:
 Tests
 -----
 
-If you have make available
-
-.. code-block:: bash
-
-    $ make test
-
-You can always use the setup.py file
-
 .. code-block:: bash
 
     $ python setup.py test
