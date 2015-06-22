@@ -8,9 +8,9 @@ import logging
 from logging.handlers import SMTPHandler
 
 from flask import Flask, request, render_template
-from flask.ext.sslify import SSLify
 from werkzeug.contrib.fixers import ProxyFix
 from flask.ext.babel import Babel
+from flask.ext.sslify import SSLify
 
 from .models.user import User
 from .frontend import frontend
@@ -31,7 +31,7 @@ class AppFactory(object):
 
     def create_app(self, config=None, app_name=None, blueprints=None):
         if app_name is None:
-            app_name = 'project name'
+            app_name = 'project'
         if blueprints is None:
             blueprints = self.default_blueprints()
 
@@ -41,7 +41,6 @@ class AppFactory(object):
         self.configure_blueprints(app, blueprints)
         self.configure_extensions(app)
         self.configure_logging(app)
-        self.configure_template_filters(app)
         self.configure_error_handlers(app)
         self.configure_web_settings(app)
         return app

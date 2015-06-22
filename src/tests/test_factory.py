@@ -1,7 +1,8 @@
 import logging
 import unittest
-import project.factory as factory
 import flask
+
+from project import factory
 
 class TestConfig(object):
     SECRET_KEY = 'some_secrecy_is_ok'
