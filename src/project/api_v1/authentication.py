@@ -1,4 +1,3 @@
-
 from flask import current_app, request, jsonify, session
 from flask.ext.login import login_user, current_user, logout_user
 
@@ -28,7 +27,7 @@ def login():
         current_app.logger.debug("API user '{}' logged in".format(email))
         return jsonify(success=True)
 
-    current_app.logger.info("API user '{}' login failed".format(email))
+    current_app.logger.debug("API user login failed")
     return jsonify(success=False, message='Login failed')
 
 @api_v1.route('/logout')

@@ -30,6 +30,6 @@ class UserService(BaseService):
             return User.verify_auth_token(secret_key, email_or_token)
         self.logger.debug("Authenticating by password for {} ...".format(email_or_token))
         user = User.query.filter_by(email=email_or_token).first()
-        if user.verify_password(password):
+        if user and user.verify_password(password):
             return user
         return None
