@@ -29,7 +29,7 @@ from project.models import *
 from project.extensions import db
 
 manager = Manager(app)
-migrate = Migrate(app)
+migrate = Migrate(app, db)
 
 def make_shell_context():
     return dict(app=app, db=db)
